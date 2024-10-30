@@ -85,11 +85,12 @@
 
     .carousel-container {
         margin-left: -20px !important;
+        max-width: 100% !important;
     }
 
     .carousel-slide img {
-        max-height: 200% !important;
-        max-width: 200% !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
     }
 
     .prev {
