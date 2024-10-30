@@ -24,8 +24,8 @@
     }
 
     .social-links img{
-        max-height: 50%;
-        max-width: 50%;
+        max-height: 75%;
+        max-width: 75%;
         padding-left: 10px !important;
     }
 
@@ -104,7 +104,7 @@
     }
 
     svg.squiggle {
-        margin-top: -100px !important;
+        margin-top: -240px !important;
         max-height: 1800px !important;
     }
 
@@ -585,7 +585,7 @@ svg.squiggle {
     justify-content: center; 
     width: 100%;
     position: relative; 
-    top: 400px;
+    top: 430px;
     z-index: 50; 
 }
 
@@ -608,8 +608,7 @@ svg.squiggle {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2em; 
+    align-items: center; 
     background-color: transparent; 
     color: white;
 }
@@ -617,11 +616,13 @@ svg.squiggle {
 .name-flip-container .back {
     transform: rotateY(180deg);
     z-index: 1;
+    font-size: 1em;
 }
 
 .name-flip-container .front {
     transform: rotateY(0deg);
     z-index: 2;
+    font-size: 2em;
 }
 
 .copy {
