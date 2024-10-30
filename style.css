@@ -430,7 +430,7 @@ body::-webkit-scrollbar {
 
 .carousel-slide img{
     max-width: 200%;
-    height: 200%;
+    max-height: auto;
 }
 
 .prev, .next {
