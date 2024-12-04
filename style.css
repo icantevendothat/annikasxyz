@@ -633,5 +633,6 @@ svg.squiggle {
     display: flex;
     justify-content: center;
     margin-top: 1000px;
+    text-align: center;
 }
 
