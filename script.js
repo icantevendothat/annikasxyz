@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const blackDuration = 400;
 
     const imageUrls = [
-        'media/gritos.webp', 'media/spaces.webp',
+        'media/gritos.webp', 'media/spaces.webp', 'media/mareas.webp',
         'media/posters.webp', 'media/limerence.webp', 'media/rafo.webp', 'media/enyelc.webp', 'media/IMG_5747 3.webp',
         'media/lou.webp', 'media/000253110032.webp', 'media/ineinander.webp', 'media/fut3.webp', 'media/clara.webp',
         'media/suzhou.webp', 'media/ratp-1_0008_Screen-Shot-2024-04-09-at-2.22.58-AM.webp', 'media/eser.webp',
         'media/lecons.webp', 'media/blackhair.webp', 'media/hannah.webp', 'media/inmate.webp', 'media/Screen Shot 2024-04-25 at 6.06.26 PM.webp',
-        'media/patternbook.webp', 'media/000265130010.webp', 'media/000021400022.webp', 'media/gaia.webp', 'media/00140015.webp',
+        'media/patternbook.webp', 'media/000265130010.webp', 'media/000021400022.webp', 'media/gaia.webp', 'media/00140015.webp', 'media/xunch.webp',
         'media/cyano4.webp', 'media/sports.webp', 'media/IMG_8994.webp', 'media/lecons.webp'
     ];
 
