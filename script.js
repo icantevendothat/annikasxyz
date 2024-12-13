@@ -2,14 +2,42 @@
 document.addEventListener("DOMContentLoaded", function() {
     const content = document.getElementById('content');
     const loaderOverlay = document.getElementById('loader-overlay');
+    const logo = document.querySelector('#logo path');
+    const welcome = document.querySelector('#welcome path');
     const socialLinks = document.querySelector('.social-links');
     const header = document.querySelector('.header');
     const nameFlipContainer = document.querySelector('.name-flip-container');
     const gridItems = document.querySelectorAll('.image-grid .modal-trigger');
-
     const animationDuration = 5000;
     const greenDuration = 400;
     const blackDuration = 400;
+
+    [logo, welcome].forEach(path => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+
+        path.animate(
+            [{ strokeDashoffset: length }, { strokeDashoffset: 0 }],
+            {
+                duration: animationDuration,
+                easing: 'ease-in-out',
+                fill: 'forwards'
+            }
+        );
+    });
+
+    setTimeout(() => {
+        loaderOverlay.classList.add('start-transition'); 
+        setTimeout(() => {
+            loaderOverlay.classList.add('black-transition'); 
+        }, greenDuration);
+
+        setTimeout(() => {
+            loaderOverlay.style.display = 'none';
+            document.body.style.overflow = 'scroll';
+        }, greenDuration + blackDuration);
+    }, animationDuration);
 
     const imageUrls = [
         'media/gritos.webp', 'media/spaces.webp', 'media/mareas.webp',
