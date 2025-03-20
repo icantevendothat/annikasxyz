@@ -318,7 +318,7 @@ body::-webkit-scrollbar {
 
 .image-grid-container {
     position: relative;
-    top: 50vh;
+    top: 40vh;
     height: 360vh;
 }
 
