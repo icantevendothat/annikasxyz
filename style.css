@@ -40,6 +40,7 @@
 
     .image-grid {
         max-height: 100vh;
+        margin-top: 55px !important;
     }
 
     .image-grid-container {
@@ -324,7 +325,6 @@ body::-webkit-scrollbar {
 
 .image-grid {
     display: grid;
-    /* top: 70vh; */
     grid-template-columns: repeat(6, 1fr); 
     grid-template-rows: auto;
     gap: 20px; 
@@ -635,4 +635,3 @@ svg.squiggle {
     margin-top: 1000px;
     text-align: center;
 }
-
