@@ -4,6 +4,13 @@
       opacity: 0; 
   }
 
+  #logo {
+    max-width: 20%;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
   .html {
       overflow-x: hidden !important;
 
