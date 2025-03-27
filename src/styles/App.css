@@ -9,6 +9,7 @@
     max-height: auto;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
   }
 
   .html {
@@ -42,11 +43,11 @@
 
   .name-flip-container {
       margin-top: -270px !important;
-      font-size: .5rem;
   }
 
   .image-grid {
       max-height: 100vh;
+      margin-top: 5vh;
   }
 
   .image-grid-container {
@@ -89,6 +90,8 @@
 
   .flip-container {
       perspective: none;
+      top: 400px;
+
   }
   .flip-container .flipper {
       transform: none;
