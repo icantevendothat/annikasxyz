@@ -45,6 +45,10 @@
       margin-top: -270px !important;
   }
 
+  .flipper p{
+    font-size: .6em;
+  }
+
   .image-grid {
       max-height: 100vh;
       margin-top: 5vh;
