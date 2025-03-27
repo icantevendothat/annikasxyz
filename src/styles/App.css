@@ -34,17 +34,16 @@
   }
 
   .name-flip-container {
-      margin-top: -300px !important;
+      margin-top: -270px !important;
       font-size: .5rem;
   }
 
   .image-grid {
       max-height: 100vh;
-      margin-top: 55px !important;
   }
 
   .image-grid-container {
-      max-height: 150vh;
+      max-height: 120vh;
   }
 
   .split-section {
@@ -73,43 +72,11 @@
       margin-top: 50px !important;
   }
 
-
   .footer {
       margin-top: 320px !important;
   }
 
-  #caption {
-      max-width: 100% !important;
-      padding: 10px;
-  }
-
-  .modal-content {
-      max-width: 85% !important;
-      margin-bottom: 90px !important;
-  }
-
-  .carousel-container {
-      margin-left: 0px !important;
-      max-width: 100% !important;
-  }
-
-  .carousel-slide img {
-      max-height: 100% !important;
-      max-width: 100% !important;
-  }
-
-  .prev {
-      /* left: 0; */
-      margin-left: -25px !important; 
-  }
-  
-  .next {
-      /* right: 0;  */
-      margin-right: -25px !important; 
-  }
-
-  svg.squiggle {
-      margin-top: -240px !important;
+  .squiggle {
       max-height: 1800px !important;
   }
 
@@ -129,6 +96,14 @@
   .copy {
       margin-top: 600px !important;
       margin-bottom: 20px !important;
+  }
+
+  .game-mode-toggle p {
+    display: none;
+  }
+  
+  .game-mode-toggle img {
+    display: none;
   }
 
 }
