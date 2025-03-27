@@ -1,0 +1,25 @@
+{
+    "short_name": "annikasxyz",
+    "name": "Annika Santhanam Portfolio",
+    "icons": [
+      {
+        "src": "media/favicon.png",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "media/meii.png",
+        "type": "image/png",
+        "sizes": "176x229"
+      },
+      {
+        "src": "media/meii.png",
+        "type": "image/png",
+        "sizes": "470x612"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#82fb74",
+    "background_color": "#000000"
+  }

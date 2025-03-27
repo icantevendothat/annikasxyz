@@ -7,10 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const socialLinks = document.querySelector('.social-links');
     const header = document.querySelector('.header');
     const nameFlipContainer = document.querySelector('.name-flip-container');
-    const gridItems = document.querySelectorAll('.image-grid .modal-trigger');
-    const animationDuration = 5000;
-    const greenDuration = 400;
-    const blackDuration = 400;
+    const gridItems = document.querySelectorAll('.image-grid .modal-trigger'); 
 
     [logo, welcome].forEach(path => {
         const length = path.getTotalLength();
@@ -27,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     });
 
+    const greenDuration = 400;
+    const blackDuration = 400;
+   
     setTimeout(() => {
         loaderOverlay.classList.add('start-transition'); 
         setTimeout(() => {
@@ -329,4 +329,59 @@ document.getElementById("copyEmail").addEventListener("click", function() {
   }).catch(err => {
       console.error("Failed to copy email: ", err);
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let gameActive = true; // Game mode starts as ON
+
+    function toggleGameMode(state) {
+        gameActive = state;
+        console.log("Game mode:", gameActive ? "ON" : "OFF");
+    }
+
+    function closeModal() {
+        const gameOverModal = document.getElementById('gameOverModal');
+        if (gameOverModal) {
+            gameOverModal.style.display = 'none';
+        }
+    }
+
+    const turnOffGameBtn = document.getElementById('turnOffGameBtn');
+    if (turnOffGameBtn) {
+        turnOffGameBtn.addEventListener('click', function () {
+            toggleGameMode(false);
+            closeModal();
+        });
+    }
+
+    const turnOnGameButton = document.getElementById('turnOnGameButton');
+    if (turnOnGameButton) {
+        turnOnGameButton.addEventListener('click', function () {
+            toggleGameMode(true);
+        });
+    }
+
+    function checkCollision(event) {
+        if (!gameActive) return;
+
+        const squiggle = document.getElementById('squiggle'); // Ensure this is an ID
+        if (!squiggle) {
+            console.log("Squiggle element not found!");
+            return;
+        }
+
+        const rect = squiggle.getBoundingClientRect();
+        const cursorX = event.clientX;
+        const cursorY = event.clientY;
+
+        if (cursorX >= rect.left && cursorX <= rect.right && cursorY >= rect.top && cursorY <= rect.bottom) {
+            console.log("Collision detected!");
+            const gameOverModal = document.getElementById('gameOverModal');
+            if (gameOverModal) {
+                gameOverModal.style.display = 'block';
+            }
+        }
+    }
+
+    document.addEventListener('mousemove', checkCollision);
 });

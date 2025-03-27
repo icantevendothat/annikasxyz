@@ -1,0 +1,399 @@
+[
+    { "empty": true },
+    {
+      "image": "/media/gritos.webp",
+      "text": "'Gritos' - Visual collage of poetry exploring the interplay of new media and obsolete media. Shot on Mini-DV and enhanced using MaxMSP audioreactivity. Devolution narrativized. 2022.<p></p> </br> <a class='modal-link' href='https://youtu.be/U2rUisajSQA'>Watch Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "/media/spaces.webp",
+      "text": "'Spaces' - Audiovisual photo series that aims to emulate the female experience in public. Field recordings and 35mm film. 2021. <p></p> </br> <a class='modal-link' href='https://youtu.be/X_zPgFDn9Fo'>Listen Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "/media/mareas.webp",
+      "text": "Website for 'Mareas a la Deriva' Film. 2024. <p></p> </br><a class='modal-link' href='https://icantevendothat.github.io/mareassite/#top'>Visit the Site Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "/media/posters.webp",
+      "text": "Poster collection. Graphic works for a variety of clients. 2020' - Present.",
+      "carousel": true,
+      "images": [
+        "/media/posters.webp",
+        "/media/posterandre.webp",
+        "/media/biolerpark811.webp",
+        "/media/headnoise.webp",
+        "/media/THISONE.webp",
+        "/media/fut3.webp"
+      ]
+    },
+    { "empty": true },
+    {
+      "image": "/media/limerence.webp",
+      "text": "Sound design credits. Various roles within the sound design field on a variety of projects. 2021 - Present. <p></p> </br><a class='modal-link' href='https://vimeo.com/user84084081'>Reel</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "/media/rafo.webp",
+      "text": "Motion design for Centro de Bellas Artes in San Juan, Puerto Rico. 2024.",
+      "carousel": true,
+      "images": ["/media/rafo.webp", "/media/abba.webp", "/media/centro.webp"]
+    },
+    {
+      "image": "/media/enyelc.webp",
+      "text": "Graphic collection. Works for WNYU 89.1 FM Radio Station. 2021 - 2023",
+      "carousel": true,
+      "images": [
+        "/media/enyelc.webp",
+        "/media/891.png",
+        "/media/5senses.webp",
+        "/media/crucial.webp",
+        "/media/graphix.webp",
+        "/media/junplays.webp",
+        "/media/netapps.webp",
+        "/media/sbt.webp",
+        "/media/tsb.webp"
+      ]
+    },
+    { "empty": true },
+    {
+      "image": "media/DSC02208.webp",
+      "text": "'DO NOT EAT' - Interactive self-destructive sculpture and performance piece. Look at it for too long and it will kill itself. Arduino, Raspberry Pi, Plexiglass, Water. 2025.",
+      "carousel": true,
+      "images": [
+        "media/DSC02207.webp",
+        "media/DSC02208.webp",
+        "media/DSC02209.webp",
+        "media/donot.webp"
+      ]
+    },
+    { "empty": true },
+    {
+      "image": "/media/IMG_5747.webp",
+      "text": "'PANO' - Interactive Media Arts Master's thesis. Tactical media that pushes against the harmful data practices enacted by OMNY and the New York City subway system. 2024. <p></p> </br><a class='modal-link' href='https://icantevendothat.github.io/pano/pano.html'>Visit the Site</a>",
+      "carousel": false
+    },
+    {
+      "image": "/media/lou.webp",
+      "text": "'LOU' - Interactive video profile of Cuban graffiti writer LOU. Audioreactive to the volume of the viewers, asking them whether they choose to talk over her or to listen. 2023.<p></p><a class='modal-link' href='https://youtu.be/nj1CXKbxZEc'></br> Watch Streaming Version Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/000253110032.webp",
+      "text": "Collection of analog photography. 2018 - Present.",
+      "carousel": true,
+      "images": [
+        "media/37117D08-4703-4A99-88B5-A77994536263.webp",
+        "media/53227B22-855A-4516-BE9D-362D41A5623A.webp",
+        "media/14950013.webp",
+        "media/000253110003.webp",
+        "media/000253110007.webp",
+        "media/000253110008.webp",
+        "media/000253110017.webp",
+        "media/000253110018.webp",
+        "media/000253110031.webp",
+        "media/000253110034.webp",
+        "media/000253110035.webp",
+        "media/000265130005.webp",
+        "media/000265130006.webp",
+        "media/000265130011.webp",
+        "media/000265130012.webp",
+        "media/000265130014.webp",
+        "media/000265130020.webp",
+        "media/000265130021.webp",
+        "media/000265130022.webp",
+        "media/000265130023.webp"
+    ]
+    },
+    { "empty": true },
+    {
+      "image": "media/ineinander.webp",
+      "text": "'Ineinander' - Public art project displayed on various buildings in downtown NYC. A comprehensive guide to permeability as a concept, and to ourselves as permeable subjects. 2023. <p></p><a class='modal-link' href='https://youtu.be/H6XA3SjPl4g'></br> Watch Streaming Version Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "media/fut3.webp",
+      "text": "Poster collection. Graphic works for a variety of clients. 2020 - Present.",
+      "carousel": true,
+      "images": [
+        "media/fut3.webp",
+        "media/posters.webp",
+        "media/posterandre.webp",
+        "media/biolerpark811.webp",
+        "media/headnoise.webp",
+        "media/THISONE.webp"
+    ]
+    },
+    { "empty": true },
+    {
+      "image": "media/clara.webp",
+      "text": "'Clara y Oscura' - A zine featuring Cuban graffiti writers LOU and TAIKO, Havana's heavy hitters. An account of the unique subculture as it exists in Cuba and its differences from traditional graffiti. 2023. <p></p> </br> <a class='modal-link' href='https://indd.adobe.com/view/74fea5d9-0880-4589-b011-a401a8e9a1eb'>See the Full Zine Here</a>",
+      "carousel": false
+    },
+    {
+      "image": "media/suzhou.webp",
+      "text": "'Deep Suzhou' - An auditory map of Suzhou, China built with field recordings, Arduino, and Ableton Live. Featuring music by Ben Wulkan. 2024. <p></p> </br> <a class='modal-link' href='https://youtu.be/bXk9sOcluf0'>Watch the Demo</a>",
+      "carousel": false
+    },
+    {
+      "image": "media/ez.webp",
+      "text": "Website design and overhaul for UAE based consulting firm EzeeBiz. <p></p><a class='modal-link'></br>Site Coming Soon</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/ratp-1_0008_Screen-Shot-2024-04-09-at-2.22.58-AM.webp",
+      "text": "'Attention à la Marche' - A handwritten zine ranking best and worst turnstiles for fare evasion in the Paris subway system. 2022.",
+      "carousel": true,
+      "images": [
+        "media/ratp-1.webp",
+        "media/ratp-1_0002_Screen-Shot-2024-04-09-at-2.21.52-AM.webp",
+        "media/ratp-1_0003_Screen-Shot-2024-04-09-at-2.22.12-AM.webp",
+        "media/ratp-1_0004_Screen-Shot-2024-04-09-at-2.22.21-AM.webp",
+        "media/ratp-1_0005_Screen-Shot-2024-04-09-at-2.22.30-AM.webp",
+        "media/ratp-1_0006_Screen-Shot-2024-04-09-at-2.22.38-AM.webp",
+        "media/ratp-1_0007_Screen-Shot-2024-04-09-at-2.22.49-AM.webp",
+        "media/ratp-1_0009_Screen-Shot-2024-04-09-at-2.23.06-AM.webp",
+        "media/ratp-1_0010_Screen-Shot-2024-04-09-at-2.23.15-AM.webp",
+        "media/ratp-1_0011_Screen-Shot-2024-04-09-at-2.23.24-AM.webp",
+        "media/ratp-1_0012.webp"
+    ]
+    },
+    { "empty": true },
+    {
+      "image": "media/eser.webp",
+      "text": "'ESER' - Micro archival documentary about Puerto Rican graffiti writer 'ESER' in his earliest days as an artist. 2022. <p></p><a class='modal-link' href='https://vimeo.com/714795624'></br> Watch Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "media/lecons.webp",
+      "text": "Collection of digital photography and collage. 2020 - Present.",
+      "carousel": true,
+      "images": [
+        "media/000625710001.webp",
+        "media/000625730019.webp",
+        "media/collage1.webp",
+        "media/collage2.webp",
+        "media/collage3.webp",
+        "media/collage5.webp",
+        "media/collage6.webp",
+        "media/collage8.webp",
+        "media/collage9.webp",
+        "media/collage12.webp",
+        "media/collage13.webp",
+        "media/collage14.webp",
+        "media/digital.webp",
+        "media/DSC_0610-2.webp",
+        "media/DSC_0616-2.webp",
+        "media/DSC_0672.webp",
+        "media/IMG_0408.webp",
+        "media/IMG_8475.webp",
+        "media/IMG_89162.webp",
+        "media/IMG_8936.webp",
+        "media/IMG_9092.webp",
+        "media/Screen46.webp",
+        "media/something.webp"
+      ]
+    },
+    { "empty": true },
+    {
+      "image": "media/blackhair.webp",
+      "text": "'Box Dye' - A homage to Janet Cardiff's 'Her Long Black Hair', and audio tour of New York City through the lens of 6 small stained glass sculptures around the boroughs. 2023.",
+      "carousel": true,
+      "images": [
+        "media/blackhair1.webp",
+        "media/blackhair2.webp",
+        "media/blackhair3.webp",
+        "media/blackhair4.webp",
+        "media/cdplayer.webp"
+      ]
+    },
+    {
+      "image": "media/hannah.webp",
+      "text": "3D Modeling and Design works. Created for a variety of clients 2021 - Present.",
+      "carousel": true,
+      "images": [
+        "media/hannah.webp",
+        "media/learnto.webp",
+        "media/collections.webp",
+        "media/mainlines.webp",
+        "media/penthouse.webp"
+      ]
+    },
+    {
+      "image": "media/inmate.webp",
+      "text": "'Inmate Star Chart' - Web-based art project utilizing NYC Open Data 'Daily Inmates in Custody'. Aims to humanize individuals in the prison system and call attention to the USA's mass incarceration issue. <p></p><a class='modal-link' href='https://icantevendothat.github.io/Inmate-Star-Chart/proj-1/index.html'></br> Visit the Site</a>",
+      "carousel": false
+    },
+    {
+      "image": "media/Screen26.webp",
+      "text": "Proof of concept for work in progress. New media performance tool that allows performers to improvise with their sound in real time, build with Arduino and Ableton Live.",
+      "carousel": true,
+      "images": [
+        "media/Screen34.webp",
+        "media/Screen43.webp",
+        "media/Screen23.webp"
+      ]
+    },
+    { "empty": true },
+    {
+      "image": "media/patternbook.webp",
+      "text": "'Patterns' - A patternbook with designs inspired by the cellular biology of naturally occurring plants in India. Aims to criticize the cycle of fast fashion which has exponential negative effects on those who make up the backbone of the fashion industry. Looks to biomimicry and recycling as a solution. Hand bound, 1/1. 2023.",
+      "carousel": false
+    },
+    {
+      "image": "media/000265130010.webp",
+      "text": "Collection of analog photography. 2018 - Present.",
+      "carousel": true,
+      "images": [
+        "media/000265130010.webp",
+        "media/000265130025.webp",
+        "media/000265130036.webp",
+        "media/000291650017.webp",
+        "media/000291650021.webp",
+        "media/000615200009.webp",
+        "media/000615200012.webp",
+        "media/000615200016.webp",
+        "media/000615200027.webp",
+        "media/000615200028.webp",
+        "media/000615200032.webp",
+        "media/000615220011.webp",
+        "media/film2.webp",
+        "media/film4.webp",
+        "media/film9.webp",
+        "media/film11.webp",
+        "media/film12.webp",
+        "media/IMG_3733.webp",
+        "media/IMG_3752.webp",
+        "media/IMG_3759.webp",
+        "media/IMG_3763.webp",
+        "media/IMG_7047.webp",
+        "media/IMG_7059.webp"
+      ]
+    },
+    { "empty": true },
+    {
+        "image": "media/000021400022.webp",
+        "text": "'Random House' - Series of portraits in Richmond, Virginia, featuring two young dancers.",
+        "carousel": true,
+        "images": [
+          "media/000021400018.webp",
+          "media/000021400024.webp",
+          "media/000021400026.webp",
+          "media/000021400031.webp",
+          "media/000021400036.webp",
+          "media/sound.webp"
+        ]
+    },
+    { "empty": true },
+    {
+     "image": "media/gaia.webp",
+      "text": "Projection mapping work for Cult Gaia. New York fashion week, 2024.",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/00140015.webp",
+      "text": "'Freedom Plaza' - A documentation of Go Skate Day 2021 in Washington, DC. Analog photo series.",
+      "carousel": true,
+      "images": [
+        "media/00140002.webp",
+        "media/00140003.webp",
+        "media/00140004.webp",
+        "media/00140005.webp",
+        "media/00140006.webp",
+        "media/00140007.webp",
+        "media/00140008.webp",
+        "media/00140009.webp",
+        "media/00140010.webp",
+        "media/00140011.webp",
+        "media/00140012.webp",
+        "media/00140013.webp",
+        "media/00140014.webp"
+    ]
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "media/xunch.webp",
+      "text": "Portfolio website for Sam Wilbert 'XUNCH'. 2024. <p></p> </br><a class='modal-link' href='https://xunch.online'>Visit the Site Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/cyano4.webp",
+      "text": "'Sitting Around' - Cyanotype series documenting the monotony of recovery and rehab in your youth. 2021.",
+      "carousel": true,
+      "images": [
+        "media/sitting.webp",
+        "media/cyano1.webp",
+        "media/cyano2.webp",
+        "media/cyano3.webp",
+        "media/cyano4.webp",
+        "media/cyano5.webp"
+    ]
+    },
+    { "empty": true },
+    { "empty": true },
+    {
+      "image": "media/sports.webp",
+      "text": "'Slowsports' - Undergraduate thesis film.",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/IMG_8994.webp",
+      "text": "Collection of digital photography and collage. 2020 - Present.",
+      "carousel": true,
+      "images": [
+        "media/000625710001.webp",
+        "media/000625730019.webp",
+        "media/collage1.webp",
+        "media/collage2.webp",
+        "media/collage3.webp",
+        "media/collage5.webp",
+        "media/collage6.webp",
+        "media/collage8.webp",
+        "media/collage9.webp",
+        "media/collage12.webp",
+        "media/collage13.webp",
+        "media/collage14.webp",
+        "media/digital.webp",
+        "media/DSC_0610-2.webp",
+        "media/DSC_0616-2.webp",
+        "media/DSC_0672.webp",
+        "media/IMG_0408.webp",
+        "media/IMG_8475.webp",
+        "media/IMG_89162.webp",
+        "media/IMG_8936.webp",
+        "media/IMG_9092.webp",
+        "media/Screen46.webp",
+        "media/something.webp"
+    ]
+    },
+    {
+      "image": "media/lecons2.webp",
+      "text": "'Leçons' - Short film about cities and identities. Exercise in juxtaposition between physical step-printing and digital step-printing. 2022. <p></p><a class='modal-link' href='https://youtu.be/ZMbzYOq9LtM'></br> Watch Here</a>",
+      "carousel": false
+    },
+    { "empty": true },
+    {
+      "image": "media/mirasa.webp",
+      "text": "Web maintenance for Mirasa - handmade, eco-friendly, children's clothing site. <p></p><a class='modal-link' href='https://mirasadesign.com/'></br>Visit the Site</a>",
+    "carousel": false
+    },
+    { "empty": true },
+    { "empty": true }
+]
