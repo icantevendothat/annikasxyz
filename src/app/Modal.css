@@ -1,0 +1,201 @@
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .modal-left {
+        width: 100% !important; 
+        height: auto;
+        order: 1; 
+    }
+
+    .modal-right {
+        width: 100% ! important; 
+        height: auto;
+        order: 2; 
+    }
+
+   .prev {
+        transform: translateY(35vh); 
+    }
+
+    .next {
+        transform: translateY(35vh);
+    }
+
+
+    .modal-right {
+        position: relative; /* Make it relative to position the buttons */
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: url('../../public/media/xbutton.webp'), auto;
+}
+
+.modal-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    cursor: url('../../public/media/xbutton.webp'), auto;
+    opacity: 1;
+    bottom: -100%; 
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition */
+}
+
+.modal-content-transition {
+    transition: bottom 0.6s ease-in-out, opacity 0.3s ease-in-out;
+    display: flex;
+}
+
+.modal.open {
+    opacity: 1;
+    bottom: 10%; 
+    display: flex;
+}
+
+.modal-content-animate {
+    bottom: 10%;
+}
+
+.modal-content-slide-down {
+  bottom: -100%; /* Slide completely off-screen */
+  opacity: 1;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.modal-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-left {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+  
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+  
+#modalImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+  
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    z-index: 20;
+    border: none;
+    background: none;
+}
+  
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev img,
+.next img {
+    width: 50px;
+    height: auto;
+}
+
+.modal-right .text-content,
+.modal-right .text-content a,
+.modal-left img,
+.prev,
+.next {
+    cursor: pointer;
+}
+
+.close-button {
+    display: none;
+}
+
+.text-content {
+    font-family: 'Terminal Closed';
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    z-index: 1002;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.modal-link {
+    color: #82fb74;
+}
+
+.modal-link:visited {
+    color: #82fb74;
+}
+
+.modal-link:active {
+    color: #82fb74;
+}
