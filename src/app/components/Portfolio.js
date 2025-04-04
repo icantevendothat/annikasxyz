@@ -89,15 +89,15 @@ const Portfolio = ({ onGridItemClick }) => {
     return (
           <div className="portfolio-container">
             <header className="header" ref={headerRef}>
-                <img src="/media/chookisauce.png" alt="Header" className="header-img" />
+                <Image src="/media/chookisauce.png" alt="Header" className="header-<Image />" />
             </header>
 
             <div className="social-links" ref={socialLinksRef}>
                 <a href="https://www.linkedin.com/in/annikasanthanam/" target="_blank" rel="noopener noreferrer">
-                    <img src="/media/Linkedin.png" alt="LinkedIn" />
+                    <Image src="/media/Linkedin.png" alt="LinkedIn" />
                 </a>
                 <a href="https://instagram.com/icantevendothat" target="_blank" rel="noopener noreferrer">
-                    <img src="/media/Instagram.png" alt="Instagram" />
+                    <Image src="/media/Instagram.png" alt="Instagram" />
                 </a>
             </div>
 
@@ -152,20 +152,35 @@ const Portfolio = ({ onGridItemClick }) => {
                     </p>
 
                     <p>
-                        <strong>FILMOGRAPHY</strong><br />
-                        Sound Mixer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: '#82fb74' }}>"Mareas a la Deriva"</a> - Dir. Camila Rodriguez-Lopez, 2024<br />
-                        Sound Mixer, <a href="https://www.technoburgermovie.com/" style={{ color: '#82fb74' }}>"Technoburger"</a> - Dir. Andrew Edison, May 2023<br />
-                        Sound Mixer, <a href="https://www.imdb.com/title/tt27920538/" style={{ color: '#82fb74' }}>"We Seem to Feel"</a> - Dir. Izzy Perez, 2023<br />
-                        Sound Mixer, "Diaspora Sisters" - Dir. Camila Rodriguez-Lopez, 2023<br />
-                        Sound Mixer, <a href="https://independentshortsawards.com/2024/07/03/trust-me-bro/" style={{ color: '#82fb74' }}>"Trust Me, Bro"</a> - Dir. Milan Veissi, 2023<br />
-                        Sound Mixer, "Te Quiero Mucho" - Dir. Liz Koch, 2023<br />
-                        Sound Designer, <a href="https://vimeo.com/867368348" style={{ color: '#82fb74' }}>"In Threes"</a> - Dir. Nico Love, 2023<br />
-                        Sound Designer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: '#82fb74' }}>"Mareas a la Deriva"</a> - Dir. Camila Rodriguez-Lopez, 2024<br />
-                        Dialogue Editor, <a href="https://www.youtube.com/watch?v=9rmyxcL0BDM" style={{ color: '#82fb74' }}>"Acting Human"</a> (TV Pilot) - Dir. J. Roche and A. Tyde G., 2023<br />
-                        ADR Engineer, <a href="https://writers.coverfly.com/projects/view/0504a527-eaed-4d02-b66c-568addd6f4f3/Carnitas" style={{ color: '#82fb74' }}>"Carnitas"</a> (TV Pilot) - Dir. Mariana Reider, 2023<br />
-                        Sound Designer, <a href="https://www.instagram.com/grandma.play/" style={{ color: '#82fb74' }}>"Grandma"</a> (Stageplay) - Dir. Ananda Long, 2023<br />
-                        Sound Designer, "Brothers" (Stageplay) - Dir. Roy Nathanson, 2023<br />
-                        Sound Designer, "Heaven's Gate" - Dir. Jaiden McCrann, 2024
+                        <strong>FILMOGRAPHY</strong>
+                        <br />
+                        Sound Mixer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: "#82fb74" }}>&quot;Mareas a la Deriva&quot;</a> - Dir. Camila Rodriguez-Lopez, 2024
+                        <br />
+                        Sound Mixer, <a href="https://www.technoburgermovie.com/" style={{ color: "#82fb74" }}>&quot;Technoburger&quot;</a> - Dir. Andrew Edison, May 2023
+                        <br />
+                        Sound Mixer, <a href="https://www.imdb.com/title/tt27920538/" style={{ color: "#82fb74" }}>&quot;We Seem to Feel&quot;</a> - Dir. Izzy Perez, 2023
+                        <br />
+                        Sound Mixer, &quot;Diaspora Sisters&quot; - Dir. Camila Rodriguez-Lopez, 2023
+                        <br />
+                        Sound Mixer, <a href="https://independentshortsawards.com/2024/07/03/trust-me-bro/" style={{ color: "#82fb74" }}>&quot;Trust Me, Bro&quot;</a> - Dir. Milan Veissi, 2023
+                        <br />
+                        Sound Mixer, &quot;Te Quiero Mucho&quot; - Dir. Liz Koch, 2023
+                        <br />
+                        Sound Designer, <a href="https://vimeo.com/867368348" style={{ color: "#82fb74" }}>&quot;In Threes&quot;</a> - Dir. Nico Love, 2023
+                        <br />
+                        Sound Designer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: "#82fb74" }}>&quot;Mareas a la Deriva&quot;</a> - Dir. Camila Rodriguez-Lopez, 2024
+                        <br />
+                        Dialogue Editor, <a href="https://www.youtube.com/watch?v=9rmyxcL0BDM" style={{ color: "#82fb74" }}>&quot;Acting Human&quot;</a> (TV Pilot) - Dir. J. Roche and A. Tyde G., 2023
+                        <br />
+                        ADR Engineer, <a href="https://writers.coverfly.com/projects/view/0504a527-eaed-4d02-b66c-568addd6f4f3/Carnitas" style={{ color: "#82fb74" }}>&quot;Carnitas&quot;</a> (TV Pilot) - Dir. Mariana Reider, 2023
+                        <br />
+                        Sound Designer, <a href="https://www.instagram.com/grandma.play/" style={{ color: "#82fb74" }}>&quot;Grandma&quot;</a> (Stageplay) - Dir. Ananda Long, 2023
+                        <br />
+                        Sound Designer, &quot;Brothers&quot; (Stageplay) - Dir. Roy Nathanson, 2023
+                        <br />
+                        Sound Designer, &quot;Heaven&apos;s Gate&quot; - Dir. Jaiden McCrann, 2024
+                        <br />
+
                     </p>
                 </div>
             </section>
@@ -174,21 +189,21 @@ const Portfolio = ({ onGridItemClick }) => {
                 <div className="flip-container" id="flip-container" ref={flipContainerRef}>
                     <div className="flipper" onClick={toggleEmailFlip}>
                         <div className="front" id="front-content">
-                            <h1>LET'S TALK</h1>
+                            <h1>LET&apos;S TALK</h1>
                         </div>
                         <div id="copyEmail" className="back" onClick={copyEmailToClipboard}>
                             <h1>COPY EMAIL TO CLIPBOARD</h1>
                         </div>
                     </div>
                 </div>
-                <img src="/media/meii.png" alt="Bottom" className="bottom-image" />
+                <Image src="/media/meii.png" alt="Bottom" className="bottom-image" />
             </footer>
 
             {isGameOver && (
                 <div className="popup-overlay">
                     <div className="popup-content">
                         <h1 className="popup-header">GAME OVER!</h1>
-                        <img src="/media/meii.png" alt="Meii" className="meii-over" />
+                        <Image src="/media/meii.png" alt="Meii" className="meii-over" />
                         <h3 className="popup-title">What just happened?</h3>
                         <p className="popup-message">
                             Welcome to my hidden game! <br /> Try your best to avoid the tip of the green line. If it touches your cursor, you lose!
@@ -198,7 +213,7 @@ const Portfolio = ({ onGridItemClick }) => {
                             Click here to turn off Game Mode and browse in peace. <br /> You can always turn it back on at the bottom of the page.
                         </p>
                         <div onClick={handlePopupClose} className="popup-image-container">
-                        <img src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
+                        <Image src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
                         </div>
                     </div>
                 </div>
@@ -212,7 +227,7 @@ const Portfolio = ({ onGridItemClick }) => {
 
             <div className="game-mode-toggle" onClick={toggleGameMode}>
                 <p>GAME MODE</p>
-                <img src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image" />
+                <Image  src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image"/>
             </div>
 
         </div>
