@@ -790,194 +790,199 @@ const Portfolio = ({ onGridItemClick })=>{
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
                                         lineNumber: 155,
-                                        columnNumber: 25
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 155,
-                                        columnNumber: 53
+                                        lineNumber: 156,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Mixer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.instagram.com/mareasaladeriva/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Mareas a la Deriva"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 156,
+                                        lineNumber: 157,
                                         columnNumber: 38
                                     }, this),
                                     " - Dir. Camila Rodriguez-Lopez, 2024",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 156,
-                                        columnNumber: 180
+                                        lineNumber: 158,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Mixer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.technoburgermovie.com/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Technoburger"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 157,
+                                        lineNumber: 159,
                                         columnNumber: 38
                                     }, this),
                                     " - Dir. Andrew Edison, May 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 157,
-                                        columnNumber: 161
+                                        lineNumber: 160,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Mixer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.imdb.com/title/tt27920538/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"We Seem to Feel"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 158,
+                                        lineNumber: 161,
                                         columnNumber: 38
                                     }, this),
                                     " - Dir. Izzy Perez, 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 158,
-                                        columnNumber: 161
+                                        lineNumber: 162,
+                                        columnNumber: 25
                                     }, this),
                                     'Sound Mixer, "Diaspora Sisters" - Dir. Camila Rodriguez-Lopez, 2023',
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 159,
-                                        columnNumber: 92
+                                        lineNumber: 164,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Mixer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://independentshortsawards.com/2024/07/03/trust-me-bro/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Trust Me, Bro"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 160,
+                                        lineNumber: 165,
                                         columnNumber: 38
                                     }, this),
                                     " - Dir. Milan Veissi, 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 160,
-                                        columnNumber: 183
+                                        lineNumber: 166,
+                                        columnNumber: 25
                                     }, this),
                                     'Sound Mixer, "Te Quiero Mucho" - Dir. Liz Koch, 2023',
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 161,
-                                        columnNumber: 77
+                                        lineNumber: 168,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Designer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://vimeo.com/867368348",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"In Threes"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 162,
+                                        lineNumber: 169,
                                         columnNumber: 41
                                     }, this),
                                     " - Dir. Nico Love, 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 162,
-                                        columnNumber: 146
+                                        lineNumber: 170,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Designer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.instagram.com/mareasaladeriva/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Mareas a la Deriva"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 163,
+                                        lineNumber: 171,
                                         columnNumber: 41
                                     }, this),
                                     " - Dir. Camila Rodriguez-Lopez, 2024",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 163,
-                                        columnNumber: 183
+                                        lineNumber: 172,
+                                        columnNumber: 25
                                     }, this),
                                     "Dialogue Editor, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.youtube.com/watch?v=9rmyxcL0BDM",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Acting Human"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 164,
+                                        lineNumber: 173,
                                         columnNumber: 42
                                     }, this),
                                     " (TV Pilot) - Dir. J. Roche and A. Tyde G., 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 164,
-                                        columnNumber: 191
+                                        lineNumber: 174,
+                                        columnNumber: 25
                                     }, this),
                                     "ADR Engineer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://writers.coverfly.com/projects/view/0504a527-eaed-4d02-b66c-568addd6f4f3/Carnitas",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Carnitas"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 165,
+                                        lineNumber: 175,
                                         columnNumber: 39
                                     }, this),
                                     " (TV Pilot) - Dir. Mariana Reider, 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 165,
-                                        columnNumber: 220
+                                        lineNumber: 176,
+                                        columnNumber: 25
                                     }, this),
                                     "Sound Designer, ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                         href: "https://www.instagram.com/grandma.play/",
                                         style: {
-                                            color: '#82fb74'
+                                            color: "#82fb74"
                                         },
                                         children: '"Grandma"'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 166,
+                                        lineNumber: 177,
                                         columnNumber: 41
                                     }, this),
                                     " (Stageplay) - Dir. Ananda Long, 2023",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 166,
-                                        columnNumber: 170
+                                        lineNumber: 178,
+                                        columnNumber: 25
                                     }, this),
                                     'Sound Designer, "Brothers" (Stageplay) - Dir. Roy Nathanson, 2023',
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 167,
-                                        columnNumber: 90
+                                        lineNumber: 180,
+                                        columnNumber: 25
                                     }, this),
-                                    'Sound Designer, "Heaven\'s Gate" - Dir. Jaiden McCrann, 2024'
+                                    'Sound Designer, "Heaven\'s Gate" - Dir. Jaiden McCrann, 2024',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/src/app/components/Portfolio.js",
+                                        lineNumber: 182,
+                                        columnNumber: 25
+                                    }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Portfolio.js",
@@ -1014,12 +1019,12 @@ const Portfolio = ({ onGridItemClick })=>{
                                         children: "LET'S TALK"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 177,
+                                        lineNumber: 191,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Portfolio.js",
-                                    lineNumber: 176,
+                                    lineNumber: 190,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1030,23 +1035,23 @@ const Portfolio = ({ onGridItemClick })=>{
                                         children: "COPY EMAIL TO CLIPBOARD"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Portfolio.js",
-                                        lineNumber: 180,
+                                        lineNumber: 194,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Portfolio.js",
-                                    lineNumber: 179,
+                                    lineNumber: 193,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 175,
+                            lineNumber: 189,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Portfolio.js",
-                        lineNumber: 174,
+                        lineNumber: 188,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -1055,13 +1060,13 @@ const Portfolio = ({ onGridItemClick })=>{
                         className: "bottom-image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Portfolio.js",
-                        lineNumber: 184,
+                        lineNumber: 198,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Portfolio.js",
-                lineNumber: 173,
+                lineNumber: 187,
                 columnNumber: 13
             }, this),
             isGameOver && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1074,7 +1079,7 @@ const Portfolio = ({ onGridItemClick })=>{
                             children: "GAME OVER!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 190,
+                            lineNumber: 204,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -1083,7 +1088,7 @@ const Portfolio = ({ onGridItemClick })=>{
                             className: "meii-over"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 191,
+                            lineNumber: 205,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
@@ -1091,7 +1096,7 @@ const Portfolio = ({ onGridItemClick })=>{
                             children: "What just happened?"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 192,
+                            lineNumber: 206,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -1100,14 +1105,14 @@ const Portfolio = ({ onGridItemClick })=>{
                                 "Welcome to my hidden game! ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/components/Portfolio.js",
-                                    lineNumber: 194,
+                                    lineNumber: 208,
                                     columnNumber: 56
                                 }, this),
                                 " Try your best to avoid the tip of the green line. If it touches your cursor, you lose!"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 193,
+                            lineNumber: 207,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -1116,14 +1121,14 @@ const Portfolio = ({ onGridItemClick })=>{
                                 "Click here to turn off Game Mode and browse in peace. ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/components/Portfolio.js",
-                                    lineNumber: 198,
+                                    lineNumber: 212,
                                     columnNumber: 83
                                 }, this),
                                 " You can always turn it back on at the bottom of the page."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 197,
+                            lineNumber: 211,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1135,23 +1140,23 @@ const Portfolio = ({ onGridItemClick })=>{
                                 className: "popup-image"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Portfolio.js",
-                                lineNumber: 201,
+                                lineNumber: 215,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Portfolio.js",
-                            lineNumber: 200,
+                            lineNumber: 214,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/Portfolio.js",
-                    lineNumber: 189,
+                    lineNumber: 203,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Portfolio.js",
-                lineNumber: 188,
+                lineNumber: 202,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Game$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1159,7 +1164,7 @@ const Portfolio = ({ onGridItemClick })=>{
                 isGameMode: isGameMode
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Portfolio.js",
-                lineNumber: 207,
+                lineNumber: 221,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -1168,7 +1173,7 @@ const Portfolio = ({ onGridItemClick })=>{
                     "MADE WITH LOVE AND MY OWN TWO HANDS ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/app/components/Portfolio.js",
-                        lineNumber: 210,
+                        lineNumber: 224,
                         columnNumber: 53
                     }, this),
                     " 2025 ",
@@ -1176,7 +1181,7 @@ const Portfolio = ({ onGridItemClick })=>{
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Portfolio.js",
-                lineNumber: 209,
+                lineNumber: 223,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1187,7 +1192,7 @@ const Portfolio = ({ onGridItemClick })=>{
                         children: "GAME MODE"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Portfolio.js",
-                        lineNumber: 214,
+                        lineNumber: 228,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -1196,13 +1201,13 @@ const Portfolio = ({ onGridItemClick })=>{
                         className: "game-mode-image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Portfolio.js",
-                        lineNumber: 215,
+                        lineNumber: 229,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Portfolio.js",
-                lineNumber: 213,
+                lineNumber: 227,
                 columnNumber: 13
             }, this)
         ]

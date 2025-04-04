@@ -89,7 +89,7 @@ const Portfolio = ({ onGridItemClick }) => {
     return (
           <div className="portfolio-container">
             <header className="header" ref={headerRef}>
-                <img src="/media/chookisauce.png" alt="Header" className="header-<Image />" />
+                <img src="/media/chookisauce.png" alt="Header" className="header-img" />
             </header>
 
             <div className="social-links" ref={socialLinksRef}>
@@ -152,7 +152,7 @@ const Portfolio = ({ onGridItemClick }) => {
                     </p>
 
                     <p>
-                        <strong>FILMOGRAPHY</strong>
+                    <strong>FILMOGRAPHY</strong>
                         <br />
                         Sound Mixer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: "#82fb74" }}>&quot;Mareas a la Deriva&quot;</a> - Dir. Camila Rodriguez-Lopez, 2024
                         <br />
@@ -180,7 +180,6 @@ const Portfolio = ({ onGridItemClick }) => {
                         <br />
                         Sound Designer, &quot;Heaven&apos;s Gate&quot; - Dir. Jaiden McCrann, 2024
                         <br />
-
                     </p>
                 </div>
             </section>
@@ -189,7 +188,7 @@ const Portfolio = ({ onGridItemClick }) => {
                 <div className="flip-container" id="flip-container" ref={flipContainerRef}>
                     <div className="flipper" onClick={toggleEmailFlip}>
                         <div className="front" id="front-content">
-                            <h1>LET&apos;S TALK</h1>
+                            <h1>LET'S TALK</h1>
                         </div>
                         <div id="copyEmail" className="back" onClick={copyEmailToClipboard}>
                             <h1>COPY EMAIL TO CLIPBOARD</h1>
@@ -227,7 +226,7 @@ const Portfolio = ({ onGridItemClick }) => {
 
             <div className="game-mode-toggle" onClick={toggleGameMode}>
                 <p>GAME MODE</p>
-                <img src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image"/>
+                <img src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image" />
             </div>
 
         </div>
