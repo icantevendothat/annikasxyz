@@ -89,15 +89,15 @@ const Portfolio = ({ onGridItemClick }) => {
     return (
           <div className="portfolio-container">
             <header className="header" ref={headerRef}>
-                <Image src="/media/chookisauce.png" alt="Header" className="header-<Image />" />
+                <img src="/media/chookisauce.png" alt="Header" className="header-<Image />" />
             </header>
 
             <div className="social-links" ref={socialLinksRef}>
                 <a href="https://www.linkedin.com/in/annikasanthanam/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/media/Linkedin.png" alt="LinkedIn" />
+                    <img src="/media/Linkedin.png" alt="LinkedIn" />
                 </a>
                 <a href="https://instagram.com/icantevendothat" target="_blank" rel="noopener noreferrer">
-                    <Image src="/media/Instagram.png" alt="Instagram" />
+                    <img src="/media/Instagram.png" alt="Instagram" />
                 </a>
             </div>
 
@@ -196,14 +196,14 @@ const Portfolio = ({ onGridItemClick }) => {
                         </div>
                     </div>
                 </div>
-                <Image src="/media/meii.png" alt="Bottom" className="bottom-image" />
+                <img src="/media/meii.png" alt="Bottom" className="bottom-image" />
             </footer>
 
             {isGameOver && (
                 <div className="popup-overlay">
                     <div className="popup-content">
                         <h1 className="popup-header">GAME OVER!</h1>
-                        <Image src="/media/meii.png" alt="Meii" className="meii-over" />
+                        <img src="/media/meii.png" alt="Meii" className="meii-over" />
                         <h3 className="popup-title">What just happened?</h3>
                         <p className="popup-message">
                             Welcome to my hidden game! <br /> Try your best to avoid the tip of the green line. If it touches your cursor, you lose!
@@ -213,7 +213,7 @@ const Portfolio = ({ onGridItemClick }) => {
                             Click here to turn off Game Mode and browse in peace. <br /> You can always turn it back on at the bottom of the page.
                         </p>
                         <div onClick={handlePopupClose} className="popup-image-container">
-                        <Image src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
+                        <img src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
                         </div>
                     </div>
                 </div>
@@ -227,7 +227,7 @@ const Portfolio = ({ onGridItemClick }) => {
 
             <div className="game-mode-toggle" onClick={toggleGameMode}>
                 <p>GAME MODE</p>
-                <Image  src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image"/>
+                <img src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image"/>
             </div>
 
         </div>
