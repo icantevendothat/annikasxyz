@@ -21,16 +21,15 @@
     { "empty": true },
     { "empty": true },
     {
-      "image": "/media/posters.webp",
-      "text": "Poster collection. Graphic works for a variety of clients. 2020' - Present.",
+      "image": "/media/pettingzoo.webp",
+      "text": "Graphic works for a variety of clients. 2020 - Present.",
       "carousel": true,
       "images": [
-        "/media/posters.webp",
-        "/media/posterandre.webp",
-        "/media/biolerpark811.webp",
-        "/media/headnoise.webp",
-        "/media/THISONE.webp",
-        "/media/fut3.webp"
+        "/media/pettingzoo.webp",
+        "/media/clubgoldo3.webp",
+        "/media/donthate.webp",
+        "/media/donedrunk.webp",
+        "/media/miel.webp"
       ]
     },
     { "empty": true },
@@ -122,17 +121,17 @@
     { "empty": true },
     { "empty": true },
     {
-      "image": "media/fut3.webp",
+      "image": "/media/posters.webp",
       "text": "Poster collection. Graphic works for a variety of clients. 2020 - Present.",
       "carousel": true,
       "images": [
-        "media/fut3.webp",
-        "media/posters.webp",
-        "media/posterandre.webp",
-        "media/biolerpark811.webp",
-        "media/headnoise.webp",
-        "media/THISONE.webp"
-    ]
+        "/media/posters.webp",
+        "/media/posterandre.webp",
+        "/media/biolerpark811.webp",
+        "/media/headnoise.webp",
+        "/media/THISONE.webp",
+        "/media/fut3.webp"
+      ]
     },
     { "empty": true },
     {
