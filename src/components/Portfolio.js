@@ -13,6 +13,8 @@ const Portfolio = ({ onGridItemClick }) => {
     const [isGameOver, setIsGameOver] = useState(false);
     const [isGameMode, setIsGameMode] = useState(true);
     const [isHeaderFixed, setIsHeaderFixed] = useState(true);
+    const lastScrollY = useRef(0);
+    const headerState = useRef('fixed'); 
 
     const handleGameOver = (gameOver) => {
         setIsGameOver(gameOver);
@@ -45,11 +47,31 @@ const Portfolio = ({ onGridItemClick }) => {
         const headerObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    // If the sentinel has intersected, permanently change the state
+                    const currentScrollY = window.scrollY;
+                    const isScrollingDown = currentScrollY > lastScrollY.current;
+                    
                     if (entry.isIntersecting) {
-                        setIsHeaderFixed(false);
-                        // You can optionally unobserve here if you only want it to fire once
-                        headerObserver.unobserve(sentinelRef.current);
+                        // Sentinel is visible - header should be contained
+                        if (headerState.current !== 'contained') {
+                            headerState.current = 'contained';
+                            setIsHeaderFixed(false);
+                        }
+                    } else {
+                        // Sentinel is not visible - check scroll direction with a small delay
+                        setTimeout(() => {
+                            const newScrollY = window.scrollY;
+                            const finalScrollDirection = newScrollY < currentScrollY; // true if scrolling up
+                            
+                            if (finalScrollDirection && headerState.current !== 'fixed') {
+                                // Scrolling up past sentinel - make header fixed
+                                headerState.current = 'fixed';
+                                setIsHeaderFixed(true);
+                            } else if (!finalScrollDirection && headerState.current !== 'contained') {
+                                // Scrolling down past sentinel - keep header contained
+                                headerState.current = 'contained';
+                                setIsHeaderFixed(false);
+                            }
+                        }, 50); // Small delay to get more accurate scroll direction
                     }
                 });
             },
@@ -59,6 +81,13 @@ const Portfolio = ({ onGridItemClick }) => {
                 threshold: 0,
             }
         );
+
+        // Add scroll listener to continuously track scroll position
+        const handleScroll = () => {
+            lastScrollY.current = window.scrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll);
     
         // Store current refs in local variables
         const currentHeaderRef = headerRef.current;
@@ -78,6 +107,7 @@ const Portfolio = ({ onGridItemClick }) => {
         gridItems.forEach(item => observer.observe(item));
     
         return () => {
+            window.removeEventListener('scroll', handleScroll);
             if (currentHeaderRef) observer.unobserve(currentHeaderRef);
             if (currentSocialLinksRef) observer.unobserve(currentSocialLinksRef);
             if (currentNameContainerRef) observer.unobserve(currentNameContainerRef);
@@ -154,7 +184,7 @@ const Portfolio = ({ onGridItemClick }) => {
                         Terminal 5<br />
                         Cult Gaia<br />
                         Centro de Bellas Artes, Puerto Rico<br />
-                        Fundación Ludwig, Cuba<br />
+                        FundaciÃ³n Ludwig, Cuba<br />
                         WNYU 89.1 FM<br />
                         Chinatown Youth Initiatives<br />
                         R-YOLO Yoga<br />

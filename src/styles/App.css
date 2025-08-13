@@ -1,15 +1,13 @@
-/* media query */
 @media only screen and (max-width: 600px) {
   #welcome {
       opacity: 0; 
   }
 
   #logo {
-    max-width: 20%;
-    max-height: auto;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    transform: translateX(0px) !important;
   }
 
   .html {
@@ -20,15 +18,36 @@
   .body {
       max-height: 1900px !important;
       justify-content: center !important;
+      overflow-x: hidden !important;
   }
 
-  .header {
-      margin-top: 35px;
-      margin-right: 15px; 
+  .header{
+    justify-content: center;
   }
+
+  .header-img {
+    position: sticky !important;
+    top: 0 !important;
+    width: 105vw !important;
+    justify-content: center!important;
+    margin: 0;
+    z-index: 200; /* This ensures the header is visible */
+}
+
+/* You also need to override the desktop-specific classes */
+  .header.fixed, .header.contained {
+    position: sticky !important;
+    top: 0;
+    width: 100vw !important;
+    justify-content: center!important;
+    transform: none !important;
+    transform: translateX(-18px) !important;
+}
 
   .social-links {
       justify-content: center;
+      font-size: 0.3em;
+      margin-bottom: 70px !important;
   }
 
   .social-links {
@@ -36,22 +55,13 @@
       padding-right: 0px !important;
   }
 
-  .social-links img{
-      max-height: 75%;
-      max-width: 75%;
-  }
-
-  .name-flip-container {
-      margin-top: -270px !important;
-  }
-
-  .flipper p{
-    font-size: .6em;
-  }
-
   .image-grid {
       max-height: 100vh;
-      margin-top: 5vh;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-item {
+    height: 30vw;
   }
 
   .image-grid-container {
@@ -60,7 +70,7 @@
 
   .split-section {
       max-height: 20vh;
-      margin-top: 20px !important;
+      margin-top: -15vh;
       display: block !important;
       padding-left: 20px !important;
   }
@@ -84,8 +94,13 @@
       margin-top: 50px !important;
   }
 
+  .bottom-image {
+    max-width: 20%;
+    max-height: auto;
+  }
+
   .footer {
-      margin-top: 320px !important;
+    margin-top: 50vh;
   }
 
   .squiggle {
@@ -94,7 +109,7 @@
 
   .flip-container {
       perspective: none;
-      top: 400px;
+      top: 200px;
 
   }
   .flip-container .flipper {
@@ -108,8 +123,14 @@
   }
 
   .copy {
-      margin-top: 600px !important;
+      margin-top: 500px !important;
       margin-bottom: 20px !important;
+  }
+
+  .tagline {
+    font-size: 0.3em;
+    margin-top: 15px !important;
+    margin-bottom: 10px;
   }
 
   .game-mode-toggle p {
@@ -185,6 +206,7 @@
   stroke-dashoffset: 2935;
   animation: 5s fillLogo linear infinite;
   width: 5%;
+  transform: translateX(20px);
   height: auto;
 }
 
@@ -289,7 +311,7 @@ body::-webkit-scrollbar {
   bottom: 0; /* Right at the bottom edge */
   left: 0;
   width: 100%;
-  height: 1px; /* Make it very thin */
+  height: 1px;
   z-index: 999;
 }
 
@@ -535,7 +557,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 270px;
+  margin-top: 10vh;
 }
 
 .game-mode-toggle img {
