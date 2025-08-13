@@ -4,21 +4,17 @@ import Game from './Game';
 
 const Portfolio = ({ onGridItemClick }) => {
     const flipContainerRef = useRef(null);
-
-    const headerRef = useRef(null);
     const socialLinksRef = useRef(null);
-    const nameContainerRef = useRef(null);
-    const imageGridContainerRef = useRef(null); 
+    const imageGridContainerRef = useRef(null);
     const sentinelRef = useRef(null);
     const [isGameOver, setIsGameOver] = useState(false);
     const [isGameMode, setIsGameMode] = useState(true);
-    const [isHeaderFixed, setIsHeaderFixed] = useState(true);
+    const [isHeaderFixed, setIsHeaderFixed] = useState(false);
     const lastScrollY = useRef(0);
-    const headerState = useRef('fixed'); 
 
     const handleGameOver = (gameOver) => {
         setIsGameOver(gameOver);
-        setIsGameMode(false); 
+        setIsGameMode(false);
     };
 
     const handlePopupClose = () => {
@@ -30,6 +26,7 @@ const Portfolio = ({ onGridItemClick }) => {
     };
 
     useEffect(() => {
+        // Observer for `.show` class on elements
         const checkVisibility = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -37,42 +34,34 @@ const Portfolio = ({ onGridItemClick }) => {
                 }
             });
         };
-    
+
         const observer = new IntersectionObserver(checkVisibility, {
             root: null,
             rootMargin: '0px',
             threshold: 0.1,
         });
 
+        // The header's intersection observer
         const headerObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     const currentScrollY = window.scrollY;
                     const isScrollingDown = currentScrollY > lastScrollY.current;
-                    
+
                     if (entry.isIntersecting) {
-                        // Sentinel is visible - header should be contained
-                        if (headerState.current !== 'contained') {
-                            headerState.current = 'contained';
+                        // When the sentinel is visible, the header is "contained" at the bottom of the grid.
+                        setIsHeaderFixed(false);
+                    } else {
+                        // When the sentinel is not visible (i.e., you've scrolled past it).
+                        // Make the header fixed ONLY if you're scrolling UP.
+                        if (!isScrollingDown) {
+                            setIsHeaderFixed(true);
+                        } else {
+                            // If scrolling down, keep it "contained" (off-screen at the bottom of the grid).
                             setIsHeaderFixed(false);
                         }
-                    } else {
-                        // Sentinel is not visible - check scroll direction with a small delay
-                        setTimeout(() => {
-                            const newScrollY = window.scrollY;
-                            const finalScrollDirection = newScrollY < currentScrollY; // true if scrolling up
-                            
-                            if (finalScrollDirection && headerState.current !== 'fixed') {
-                                // Scrolling up past sentinel - make header fixed
-                                headerState.current = 'fixed';
-                                setIsHeaderFixed(true);
-                            } else if (!finalScrollDirection && headerState.current !== 'contained') {
-                                // Scrolling down past sentinel - keep header contained
-                                headerState.current = 'contained';
-                                setIsHeaderFixed(false);
-                            }
-                        }, 50); // Small delay to get more accurate scroll direction
                     }
+                    lastScrollY.current = currentScrollY;
                 });
             },
             {
@@ -82,42 +71,31 @@ const Portfolio = ({ onGridItemClick }) => {
             }
         );
 
-        // Add scroll listener to continuously track scroll position
-        const handleScroll = () => {
-            lastScrollY.current = window.scrollY;
-        };
-
-        window.addEventListener('scroll', handleScroll);
-    
-        // Store current refs in local variables
-        const currentHeaderRef = headerRef.current;
+        // Reference current refs to avoid linting issues
         const currentSocialLinksRef = socialLinksRef.current;
-        const currentNameContainerRef = nameContainerRef.current;
         const currentSentinelRef = sentinelRef.current;
-    
-        if (currentHeaderRef) observer.observe(currentHeaderRef);
+
+        // Set up the observers
         if (currentSocialLinksRef) observer.observe(currentSocialLinksRef);
-        if (currentNameContainerRef) observer.observe(currentNameContainerRef);
         if (currentSentinelRef) {
             headerObserver.observe(currentSentinelRef);
         }
-    
-        // Define gridItems inside useEffect
+
+        // Define gridItems and other elements for `.show` class
         const gridItems = document.querySelectorAll('.grid-item');
         gridItems.forEach(item => observer.observe(item));
-    
+
+        const elementsToObserve = document.querySelectorAll('.split-section, .footer, .copy, .game-mode-toggle');
+        elementsToObserve.forEach(item => observer.observe(item));
+
+        // Cleanup function
         return () => {
-            window.removeEventListener('scroll', handleScroll);
-            if (currentHeaderRef) observer.unobserve(currentHeaderRef);
             if (currentSocialLinksRef) observer.unobserve(currentSocialLinksRef);
-            if (currentNameContainerRef) observer.unobserve(currentNameContainerRef);
             if (currentSentinelRef) {
                 headerObserver.unobserve(currentSentinelRef);
             }
-            
-            // Re-query gridItems for cleanup
-            const gridItems = document.querySelectorAll('.grid-item');
             gridItems.forEach(item => observer.unobserve(item));
+            elementsToObserve.forEach(item => observer.unobserve(item));
         };
     }, []);
 
@@ -138,15 +116,13 @@ const Portfolio = ({ onGridItemClick }) => {
     };
 
     return (
-          <div className="portfolio-container">
+        <div className="portfolio-container">
             <p className="tagline">Art, Design, Technology, Misbehavior, etc.</p>
             <div className="image-grid-container" ref={imageGridContainerRef}>
                 <header className={isHeaderFixed ? "header fixed" : "header contained"}>
                     <img src="/media/chookisauce.png" alt="Header" className="header-img" />
                 </header>
-
                 <Grid onGridItemClick={onGridItemClick} />
-
                 <div ref={sentinelRef} className="header-sentinel"></div>
             </div>
 
@@ -157,20 +133,19 @@ const Portfolio = ({ onGridItemClick }) => {
                     <h1>Annika Santhanam is a Brooklyn-based technologist, producer, and designer. She is focused on creating unique and authentic projects that serve her community. Does not like citibikes or eggs. Enjoys working with her hands. Has a collection of collections and wants to collaborate!</h1>
                 </div>
                 <div className="social-links" ref={socialLinksRef}>
-                <a href="https://www.linkedin.com/in/annikasanthanam/" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
-                    linkedin
-                </a>
-                <a href="https://instagram.com/icantevendothat" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
-                   instagram
-                </a>
-            </div>
+                    <a href="https://www.linkedin.com/in/annikasanthanam/" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
+                        linkedin
+                    </a>
+                    <a href="https://instagram.com/icantevendothat" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
+                        instagram
+                    </a>
+                </div>
                 <div className="right-section">
                     <p>
                         <strong>EDUCATION</strong><br />
                         Bachelor of Fine Arts in Film and Television from New York University<br />
                         Master of Arts in Interactive Media Arts from New York University and NYU Shanghai
                     </p>
-
                     <p>
                         <strong>CLIENTS</strong><br />
                         The Downtown Festival<br />
@@ -189,14 +164,12 @@ const Portfolio = ({ onGridItemClick }) => {
                         Chinatown Youth Initiatives<br />
                         R-YOLO Yoga<br />
                     </p>
-
                     <p>
                         <strong>GRANTS & HONORARIUMS</strong><br />
                         <a href="https://error417.expectation.fail/406/tech-fascism-not-acceptable" style={{ color: '#82fb74' }}>Error 406: Tech Fascism Not Acceptable</a>, 2025<br />
                         <a href="https://thenetgala.com/artists" style={{ color: '#82fb74' }}>The Net Gala</a>, 2025<br />
                         <a href="https://pixelmouth.org/coc-salivation-1" style={{ color: '#82fb74' }}>Pixelmouth: Cult of Consumption</a>, 2025<br />
                     </p>
-
                     <p>
                         <strong>FILMOGRAPHY</strong><br />
                         Sound Designer, "Being Seen Makes Us Happy" - Dir. C. Levin and A. Newman, 2025<br />
@@ -236,12 +209,11 @@ const Portfolio = ({ onGridItemClick }) => {
                         <p className="popup-message">
                             Welcome to my hidden game! <br /> Try your best to avoid the tip of the green line. If it touches your cursor, you lose!
                         </p>
-
                         <p className="popup-message">
                             Click here to turn off Game Mode and browse in peace. <br /> You can always turn it back on at the bottom of the page.
                         </p>
                         <div onClick={handlePopupClose} className="popup-image-container">
-                        <img src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
+                            <img src="/media/off.png" alt="Turn Game Mode Off" className="popup-image" />
                         </div>
                     </div>
                 </div>
@@ -257,8 +229,8 @@ const Portfolio = ({ onGridItemClick }) => {
                 <p>GAME MODE</p>
                 <img src={isGameMode ? "/media/on.png" : "/media/off.png"} alt="Game Mode Toggle" className="game-mode-image" />
             </div>
-
         </div>
- )};
+    );
+};
 
 export default Portfolio;
