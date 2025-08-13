@@ -8,8 +8,8 @@
     { "empty": true },
     { "empty": true },
     {
-      "image": "/media/spaces.webp",
-      "text": "'Spaces' - Audiovisual photo series that aims to emulate the female experience in public. Field recordings and 35mm film. 2021. <p></p> </br> <a class='modal-link' href='https://youtu.be/X_zPgFDn9Fo'>Listen Here</a>",
+      "image": "/media/mylove.webp",
+      "text": "'My Love' Hannah Jadagu - Direction and Production for Hannah Jadagu's 'My Love' music video. 2025. <p></p> </br> <a class='modal-link' href='https://www.youtube.com/watch?v=spVWnbL_U-M'>Watch Here</a>",
       "carousel": false
     },
     { "empty": true },
@@ -40,10 +40,9 @@
     },
     { "empty": true },
     {
-      "image": "/media/rafo.webp",
-      "text": "Motion design for Centro de Bellas Artes in San Juan, Puerto Rico. 2024.",
-      "carousel": true,
-      "images": ["/media/rafo.webp", "/media/abba.webp", "/media/centro.webp"]
+      "image": "/media/sld.webp",
+      "text": "Creative Direction and Production for Sonic Liberation Devices. 2025 - Present. <p></p> </br><a class='modal-link' href='https://sonicliberationdevices.com/'>Visit the Site</a>",
+      "carousel": false
     },
     {
       "image": "/media/enyelc.webp",
@@ -119,7 +118,12 @@
       "carousel": false
     },
     { "empty": true },
-    { "empty": true },
+    {
+      "image": "/media/rafo.webp",
+      "text": "Motion design for Centro de Bellas Artes in San Juan, Puerto Rico. 2024.",
+      "carousel": true,
+      "images": ["/media/rafo.webp", "/media/abba.webp", "/media/centro.webp"]
+    },
     {
       "image": "/media/posters.webp",
       "text": "Poster collection. Graphic works for a variety of clients. 2020 - Present.",
@@ -168,7 +172,11 @@
         "media/ratp-1_0012.webp"
     ]
     },
-    { "empty": true },
+    {
+      "image": "media/dtfest.webp",
+      "text": "Website redesign and build for The Downtown Festival, independent film, arts, and culture festival in NYC. 2025. <p></p><a class='modal-link' href='https://thedowntownfestival.com/'></br> Visit the Site</a>",
+      "carousel": false
+    },
     {
       "image": "media/eser.webp",
       "text": "'ESER' - Micro archival documentary about Puerto Rican graffiti writer 'ESER' in his earliest days as an artist. 2022. <p></p><a class='modal-link' href='https://vimeo.com/714795624'></br> Watch Here</a>",
@@ -324,7 +332,11 @@
     ]
     },
     { "empty": true },
-    { "empty": true },
+    {
+      "image": "media/spaces.webp",
+      "text": "'Spaces' - Audiovisual photo series that aims to emulate the female experience in public. Field recordings and 35mm film. 2021. <p></p> </br> <a class='modal-link' href='https://youtu.be/X_zPgFDn9Fo'>Listen Here</a>",
+      "carousel": false
+    }, 
     {
       "image": "media/xunch.webp",
       "text": "Portfolio website for Sam Wilbert 'XUNCH'. 2024. <p></p> </br><a class='modal-link' href='https://xunch.online'>Visit the Site Here</a>",

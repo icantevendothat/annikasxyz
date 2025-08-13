@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    min-width: 15%;
+    height: auto;
     transform: translateX(0px) !important;
   }
 
@@ -47,7 +49,7 @@
   .social-links {
       justify-content: center;
       font-size: 0.3em;
-      margin-bottom: 70px !important;
+      margin-bottom: 30vh !important;
   }
 
   .social-links {
@@ -97,6 +99,7 @@
   .bottom-image {
     max-width: 20%;
     max-height: auto;
+    margin-top: 10vh !important;
   }
 
   .footer {
