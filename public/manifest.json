@@ -3,7 +3,7 @@
     "name": "Annika Santhanam Portfolio",
     "icons": [
       {
-        "src": "media/favicon.png",
+        "src": "favicon.ico",
         "sizes": "64x64 32x32 24x24 16x16",
         "type": "image/x-icon"
       },
@@ -22,4 +22,4 @@
     "display": "standalone",
     "theme_color": "#82fb74",
     "background_color": "#000000"
-  }
+}

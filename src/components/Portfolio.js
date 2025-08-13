@@ -4,13 +4,15 @@ import Game from './Game';
 
 const Portfolio = ({ onGridItemClick }) => {
     const flipContainerRef = useRef(null);
-    const nameFlipContainerRef = useRef(null);
 
     const headerRef = useRef(null);
     const socialLinksRef = useRef(null);
     const nameContainerRef = useRef(null);
+    const imageGridContainerRef = useRef(null); 
+    const sentinelRef = useRef(null);
     const [isGameOver, setIsGameOver] = useState(false);
     const [isGameMode, setIsGameMode] = useState(true);
+    const [isHeaderFixed, setIsHeaderFixed] = useState(true);
 
     const handleGameOver = (gameOver) => {
         setIsGameOver(gameOver);
@@ -39,15 +41,37 @@ const Portfolio = ({ onGridItemClick }) => {
             rootMargin: '0px',
             threshold: 0.1,
         });
+
+        const headerObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    // If the sentinel has intersected, permanently change the state
+                    if (entry.isIntersecting) {
+                        setIsHeaderFixed(false);
+                        // You can optionally unobserve here if you only want it to fire once
+                        headerObserver.unobserve(sentinelRef.current);
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0,
+            }
+        );
     
         // Store current refs in local variables
         const currentHeaderRef = headerRef.current;
         const currentSocialLinksRef = socialLinksRef.current;
         const currentNameContainerRef = nameContainerRef.current;
+        const currentSentinelRef = sentinelRef.current;
     
         if (currentHeaderRef) observer.observe(currentHeaderRef);
         if (currentSocialLinksRef) observer.observe(currentSocialLinksRef);
         if (currentNameContainerRef) observer.observe(currentNameContainerRef);
+        if (currentSentinelRef) {
+            headerObserver.observe(currentSentinelRef);
+        }
     
         // Define gridItems inside useEffect
         const gridItems = document.querySelectorAll('.grid-item');
@@ -57,18 +81,15 @@ const Portfolio = ({ onGridItemClick }) => {
             if (currentHeaderRef) observer.unobserve(currentHeaderRef);
             if (currentSocialLinksRef) observer.unobserve(currentSocialLinksRef);
             if (currentNameContainerRef) observer.unobserve(currentNameContainerRef);
+            if (currentSentinelRef) {
+                headerObserver.unobserve(currentSentinelRef);
+            }
             
             // Re-query gridItems for cleanup
             const gridItems = document.querySelectorAll('.grid-item');
             gridItems.forEach(item => observer.unobserve(item));
         };
     }, []);
-
-    const toggleNameFlip = () => {
-        if (nameFlipContainerRef.current) {
-            nameFlipContainerRef.current.classList.toggle('flip');
-        }
-    };
 
     const toggleEmailFlip = () => {
         if (flipContainerRef.current) {
@@ -88,47 +109,31 @@ const Portfolio = ({ onGridItemClick }) => {
 
     return (
           <div className="portfolio-container">
-            <header className="header" ref={headerRef}>
-                <img src="/media/chookisauce.png" alt="Header" className="header-img" />
-            </header>
+            <p className="tagline">Art, Design, Technology, Misbehavior, etc.</p>
+            <div className="image-grid-container" ref={imageGridContainerRef}>
+                <header className={isHeaderFixed ? "header fixed" : "header contained"}>
+                    <img src="/media/chookisauce.png" alt="Header" className="header-img" />
+                </header>
 
-            <div className="social-links" ref={socialLinksRef}>
-                <a href="https://www.linkedin.com/in/annikasanthanam/" target="_blank" rel="noopener noreferrer">
-                    <img src="/media/Linkedin.png" alt="LinkedIn" />
-                </a>
-                <a href="https://instagram.com/icantevendothat" target="_blank" rel="noopener noreferrer">
-                    <img src="/media/Instagram.png" alt="Instagram" />
-                </a>
-            </div>
-
-            <div
-                className="name-flip-container"
-                ref={(el) => {
-                    nameFlipContainerRef.current = el;
-                    nameContainerRef.current = el;
-                }}
-                onClick={toggleNameFlip}
-            >
-                <div className="flipper">
-                    <div className="front">
-                        <p className="name">ANNIKA SANTHANAM</p>
-                    </div>
-                    <div className="back">
-                        <p>VISUAL MEDIA • CREATIVE TECHNOLOGY • SOUND DESIGN</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="image-grid-container">
                 <Grid onGridItemClick={onGridItemClick} />
+
+                <div ref={sentinelRef} className="header-sentinel"></div>
             </div>
 
             <div className="stop"></div>
 
             <section className="split-section">
                 <div className="left-section">
-                    <h1>Annika Santhanam is a Brooklyn-based technologist, artist, and designer. She is focused on creating unique and authentic projects that serve her community. Does not like citibikes or eggs. Enjoys working with her hands. Has a collection of collections and wants to collaborate!</h1>
+                    <h1>Annika Santhanam is a Brooklyn-based technologist, producer, and designer. She is focused on creating unique and authentic projects that serve her community. Does not like citibikes or eggs. Enjoys working with her hands. Has a collection of collections and wants to collaborate!</h1>
                 </div>
+                <div className="social-links" ref={socialLinksRef}>
+                <a href="https://www.linkedin.com/in/annikasanthanam/" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
+                    linkedin
+                </a>
+                <a href="https://instagram.com/icantevendothat" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
+                   instagram
+                </a>
+            </div>
                 <div className="right-section">
                     <p>
                         <strong>EDUCATION</strong><br />
@@ -138,34 +143,42 @@ const Portfolio = ({ onGridItemClick }) => {
 
                     <p>
                         <strong>CLIENTS</strong><br />
-                        Mirasa Design<br />
+                        The Downtown Festival<br />
+                        Sonic Liberation Devices<br />
+                        Sub Pop Records<br />
+                        Montana Cans<br />
+                        City Limits<br />
+                        LUmkA Gallery<br />
+                        HOPE_16<br />
                         EzeeBiz, UAE<br />
-                        Terminal 5, NYC<br />
+                        Terminal 5<br />
                         Cult Gaia<br />
                         Centro de Bellas Artes, Puerto Rico<br />
                         Fundación Ludwig, Cuba<br />
-                        Hannah Jadagu, Sub Pop Records<br />
                         WNYU 89.1 FM<br />
                         Chinatown Youth Initiatives<br />
                         R-YOLO Yoga<br />
-                        New York University
+                    </p>
+
+                    <p>
+                        <strong>GRANTS & HONORARIUMS</strong><br />
+                        <a href="https://error417.expectation.fail/406/tech-fascism-not-acceptable" style={{ color: '#82fb74' }}>Error 406: Tech Fascism Not Acceptable</a>, 2025<br />
+                        <a href="https://thenetgala.com/artists" style={{ color: '#82fb74' }}>The Net Gala</a>, 2025<br />
+                        <a href="https://pixelmouth.org/coc-salivation-1" style={{ color: '#82fb74' }}>Pixelmouth: Cult of Consumption</a>, 2025<br />
                     </p>
 
                     <p>
                         <strong>FILMOGRAPHY</strong><br />
+                        Sound Designer, "Being Seen Makes Us Happy" - Dir. C. Levin and A. Newman, 2025<br />
+                        Sound Designer, "we're thinking the same thing" - Dir. Irmak Akgur, 2025<br />
+                        Sound Designer, "Heaven's Gate" - Dir. Jaiden McCrann, 2024<br />
+                        Sound Designer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: '#82fb74' }}>"Mareas a la Deriva"</a> - Dir. Camila Rodriguez-Lopez, 2024<br />
                         Sound Mixer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: '#82fb74' }}>"Mareas a la Deriva"</a> - Dir. Camila Rodriguez-Lopez, 2024<br />
                         Sound Mixer, <a href="https://www.technoburgermovie.com/" style={{ color: '#82fb74' }}>"Technoburger"</a> - Dir. Andrew Edison, May 2023<br />
                         Sound Mixer, <a href="https://www.imdb.com/title/tt27920538/" style={{ color: '#82fb74' }}>"We Seem to Feel"</a> - Dir. Izzy Perez, 2023<br />
-                        Sound Mixer, "Diaspora Sisters" - Dir. Camila Rodriguez-Lopez, 2023<br />
-                        Sound Mixer, <a href="https://independentshortsawards.com/2024/07/03/trust-me-bro/" style={{ color: '#82fb74' }}>"Trust Me, Bro"</a> - Dir. Milan Veissi, 2023<br />
-                        Sound Mixer, "Te Quiero Mucho" - Dir. Liz Koch, 2023<br />
                         Sound Designer, <a href="https://vimeo.com/867368348" style={{ color: '#82fb74' }}>"In Threes"</a> - Dir. Nico Love, 2023<br />
-                        Sound Designer, <a href="https://www.instagram.com/mareasaladeriva/" style={{ color: '#82fb74' }}>"Mareas a la Deriva"</a> - Dir. Camila Rodriguez-Lopez, 2024<br />
                         Dialogue Editor, <a href="https://www.youtube.com/watch?v=9rmyxcL0BDM" style={{ color: '#82fb74' }}>"Acting Human"</a> (TV Pilot) - Dir. J. Roche and A. Tyde G., 2023<br />
                         ADR Engineer, <a href="https://writers.coverfly.com/projects/view/0504a527-eaed-4d02-b66c-568addd6f4f3/Carnitas" style={{ color: '#82fb74' }}>"Carnitas"</a> (TV Pilot) - Dir. Mariana Reider, 2023<br />
-                        Sound Designer, <a href="https://www.instagram.com/grandma.play/" style={{ color: '#82fb74' }}>"Grandma"</a> (Stageplay) - Dir. Ananda Long, 2023<br />
-                        Sound Designer, "Brothers" (Stageplay) - Dir. Roy Nathanson, 2023<br />
-                        Sound Designer, "Heaven's Gate" - Dir. Jaiden McCrann, 2024
                     </p>
                 </div>
             </section>
