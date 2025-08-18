@@ -33,7 +33,7 @@
 
 
     .modal-right {
-        position: relative; /* Make it relative to position the buttons */
+        position: relative;
     }
 }
 
@@ -61,7 +61,7 @@
     cursor: url(/public/media/xbutton.webp), auto;
     opacity: 1;
     bottom: -100%; 
-    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition */
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; 
 }
 
 .modal-content-transition {
@@ -80,7 +80,7 @@
 }
 
 .modal-content-slide-down {
-  bottom: -100%; /* Slide completely off-screen */
+  bottom: -100%; 
   opacity: 1;
   transition: bottom 0.3s ease-in-out;
 }

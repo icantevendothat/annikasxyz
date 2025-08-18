@@ -45,14 +45,11 @@ function Game({ onGameOver, isGameMode }) {
         const handleMouseMove = (e) => {
             const svgRect = svg.getBoundingClientRect();
 
-            // Calculate mouse position relative to SVG
             const mouseX = e.clientX * 0.8 - svgRect.left;
             const mouseY = (e.clientY - svgRect.top) * 0.8;
 
-            mousePositionRef.current = { x: mouseX, y: mouseY };
-            // console.log(mousePositionRef.current);
 
-            if (isGameMode) { // Only check if isGameMode is true
+            if (isGameMode) { 
                 const intersectionResult = checkMouseIntersection(
                     path,
                     mouseX,

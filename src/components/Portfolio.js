@@ -26,7 +26,7 @@ const Portfolio = ({ onGridItemClick }) => {
     };
 
     useEffect(() => {
-        // Observer for `.show` class on elements
+        // observer for `.show` class on elements
         const checkVisibility = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -41,7 +41,7 @@ const Portfolio = ({ onGridItemClick }) => {
             threshold: 0.1,
         });
 
-        // The header's intersection observer
+        // header observer
         const headerObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -49,15 +49,11 @@ const Portfolio = ({ onGridItemClick }) => {
                     const isScrollingDown = currentScrollY > lastScrollY.current;
 
                     if (entry.isIntersecting) {
-                        // When the sentinel is visible, the header is "contained" at the bottom of the grid.
                         setIsHeaderFixed(false);
                     } else {
-                        // When the sentinel is not visible (i.e., you've scrolled past it).
-                        // Make the header fixed ONLY if you're scrolling UP.
                         if (!isScrollingDown) {
                             setIsHeaderFixed(true);
                         } else {
-                            // If scrolling down, keep it "contained" (off-screen at the bottom of the grid).
                             setIsHeaderFixed(false);
                         }
                     }
@@ -71,24 +67,20 @@ const Portfolio = ({ onGridItemClick }) => {
             }
         );
 
-        // Reference current refs to avoid linting issues
         const currentSocialLinksRef = socialLinksRef.current;
         const currentSentinelRef = sentinelRef.current;
 
-        // Set up the observers
         if (currentSocialLinksRef) observer.observe(currentSocialLinksRef);
         if (currentSentinelRef) {
             headerObserver.observe(currentSentinelRef);
         }
 
-        // Define gridItems and other elements for `.show` class
         const gridItems = document.querySelectorAll('.grid-item');
         gridItems.forEach(item => observer.observe(item));
 
         const elementsToObserve = document.querySelectorAll('.split-section, .footer, .copy, .game-mode-toggle');
         elementsToObserve.forEach(item => observer.observe(item));
 
-        // Cleanup function
         return () => {
             if (currentSocialLinksRef) observer.unobserve(currentSocialLinksRef);
             if (currentSentinelRef) {
@@ -117,7 +109,12 @@ const Portfolio = ({ onGridItemClick }) => {
 
     return (
         <div className="portfolio-container">
-            <p className="tagline">Art, Design, Technology, Misbehavior, etc.</p>
+            <div class="tagline">
+                <a href="https://www.artrabbit.com/events/mutable-molds-the-clive-davis-institute-of-recorded-music-tisch-school-of-the-arts" style={{ color: '#FFFFFF' }}  target="_blank" rel="noopener noreferrer">
+                    check this out
+                </a>
+                <p>art, design, technology, misbehavior, etc.</p>
+            </div>
             <div className="image-grid-container" ref={imageGridContainerRef}>
                 <header className={isHeaderFixed ? "header fixed" : "header contained"}>
                     <img src="/media/chookisauce.png" alt="Header" className="header-img" />

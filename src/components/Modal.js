@@ -40,7 +40,7 @@ const Modal = ({ content, closeModal }) => {
 
       setTimeout(() => {
         closeModal();
-      }, 300); // Match the transition duration
+      }, 300); 
     }
   };
 
@@ -67,7 +67,7 @@ const Modal = ({ content, closeModal }) => {
     );
   };
 
-  if (!content) { // Only render if content is not null
+  if (!content) { 
     return null;
   }
 

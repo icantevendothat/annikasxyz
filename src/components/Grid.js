@@ -21,7 +21,7 @@ const Grid = () => {
     const handleCloseModal = () => {
         setTimeout(() => {
             setModalContent(null);
-        }, 350); // Match the duration of your CSS transition
+        }, 350); 
     };
 
 
