@@ -283,9 +283,12 @@ body::-webkit-scrollbar {
   margin-top: 30px;
   margin-right: 10px;
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .header.fixed {

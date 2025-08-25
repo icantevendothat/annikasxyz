@@ -110,7 +110,7 @@ const Portfolio = ({ onGridItemClick }) => {
     return (
         <div className="portfolio-container">
             <div class="tagline">
-                <a href="https://www.artrabbit.com/events/mutable-molds-the-clive-davis-institute-of-recorded-music-tisch-school-of-the-arts" style={{ color: '#FFFFFF' }}  target="_blank" rel="noopener noreferrer">
+                <a href="https://www.artrabbit.com/events/mutable-molds-the-clive-davis-institute-of-recorded-music-tisch-school-of-the-arts" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
                     check this out
                 </a>
                 <p>art, design, technology, misbehavior, etc.</p>
