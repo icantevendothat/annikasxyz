@@ -43,7 +43,11 @@
       "carousel": false
     },
     { "empty": true },
-    { "empty": true },
+    {
+      "image": "/media/hanweb2.webp",
+      "text": "Website redesign and build for Hannah Jadagu. 2025. <p></p> </br><a class='modal-link' href='https://www.hannahjadagu.com/'>Reel</a>",
+      "carousel": false
+    },
     {
       "image": "/media/enyelc.webp",
       "text": "Graphic collection. Works for WNYU 89.1 FM Radio Station. 2021 - 2023",
