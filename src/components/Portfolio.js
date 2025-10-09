@@ -110,7 +110,7 @@ const Portfolio = ({ onGridItemClick }) => {
     return (
         <div className="portfolio-container">
             <div class="tagline">
-                <a href="https://www.youtube.com/watch?v=xMYm2d9bmEA" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
+                <a href="https://slownet.work/" style={{ color: '#FFFFFF' }} target="_blank" rel="noopener noreferrer">
                     check this out
                 </a>
                 <p>art, design, technology, misbehavior, etc.</p>
